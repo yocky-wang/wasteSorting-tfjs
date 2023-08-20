@@ -56,7 +56,7 @@ const testNum_1_9 = {
   '有害垃圾-软膏': 44
 }
 
-const getData = async (dirPath, outPath) => {
+const testData = async (dirPath, outPath) => {
   let classNames = fs.readdirSync(dirPath)
   // fs.writeFileSync(path.join(outPath,'className.json'), JSON.stringify(classNames))
   wasteNamesList = []
@@ -74,21 +74,18 @@ const getData = async (dirPath, outPath) => {
     let wasteName = wasteNamesList[wasteIndex]
     fs.readdirSync(path.join(dirPath, wasteName.split('-')[0], wasteName.split('-')[1]))
       .filter(item => item.match(/(jpg)|(jpeg)$/))
-      .slice(testNum_1_9[wasteName]) // 去掉测试集
+      .slice(0, testNum_1_9[wasteName]) // 测试集
       .forEach(filename => {
         // console.log(className,wasteNames[0],filename)
         const imgPath = path.join(dirPath, wasteName.split('-')[0], wasteName.split('-')[1], filename)
         data.push({ imgPath, wasteIndex })
       })
-    // wlist.push(wasteName.split('-')[1])
-    wlist.push(wasteName)
-    console.log(wasteName)
+    wlist.push(wasteName.split('-')[1])
+    // console.log(wasteName)
   }
 
-  // console.log(wlist.length, wlist.join('、'))
-  console.log(wlist)
   console.log(data.length) //26545
-  tf.util.shuffle(data) //打乱顺序
+
   const ds = tf.data.generator(function* () {
     const count = data.length
     const batchSize = 22
@@ -98,6 +95,7 @@ const getData = async (dirPath, outPath) => {
       yield tf.tidy(() => {
         const inputs = []
         const labels = []
+
         for (let j = start; j < end; j++) {
           const { imgPath, wasteIndex } = data[j]
           try {
@@ -123,4 +121,4 @@ const getData = async (dirPath, outPath) => {
   }
 }
 
-module.exports = getData
+module.exports = testData

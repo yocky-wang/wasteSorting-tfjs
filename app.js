@@ -1,11 +1,13 @@
 const express = require('express')
-const train = require('./train')
+const test = require('./train')
+const other = require('./train/other1')
 
 const app = express()
-app.use(express.static('train'))
-app.use(express.static('output'))
- 
+app.use('/train', express.static('train'))
+app.use('/output', express.static('output-5-6'))
+
 /* ... */
 
-app.listen(3003, () => console.log('Server ready'))
-train()
+// app.listen(3004, () => train())
+app.listen(3004, () => test())
+// app.listen(3005, () => {other()})

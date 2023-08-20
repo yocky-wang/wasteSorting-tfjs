@@ -1,0 +1,105 @@
+100张 224-224处理
+5167
+ooo
+111
+Epoch 1 / 20
+2023-03-10 17:15:28.839746: I tensorflow/stream_executor/cuda/cuda_dnn.cc:366] Loaded cuDNN version 8100
+batch: 30.331s
+
+30334ms 129079us/step - acc=0.0588 loss=3.82 
+--Epoch 0, loss=3.8219916820526123, acc=0.05883491411805153
+Epoch 2 / 20
+batch: 28.441s
+
+28444ms 121038us/step - acc=0.161 loss=3.20 
+--Epoch 1, loss=3.2028608322143555, acc=0.1610218733549118
+Epoch 3 / 20
+batch: 28.147s
+
+28150ms 119787us/step - acc=0.276 loss=2.66 
+--Epoch 2, loss=2.6552541255950928, acc=0.27617573738098145
+Epoch 4 / 20
+batch: 30.054s
+
+30058ms 127905us/step - acc=0.389 loss=2.12 
+--Epoch 3, loss=2.1159720420837402, acc=0.38939422369003296
+Epoch 5 / 20
+batch: 28.177s
+
+28180ms 119917us/step - acc=0.489 loss=1.67 
+--Epoch 4, loss=1.6707478761672974, acc=0.4894523024559021
+Epoch 6 / 20
+batch: 28.210s
+
+28214ms 120058us/step - acc=0.566 loss=1.38 
+--Epoch 5, loss=1.3810311555862427, acc=0.5658989548683167
+Epoch 7 / 20
+batch: 28.334s
+
+28337ms 120582us/step - acc=0.635 loss=1.13 
+--Epoch 6, loss=1.1296725273132324, acc=0.6346042156219482
+Epoch 8 / 20
+batch: 28.428s
+
+28432ms 120986us/step - acc=0.692 loss=0.942 
+--Epoch 7, loss=0.9424305558204651, acc=0.6920843720436096
+Epoch 9 / 20
+batch: 31.267s
+
+31271ms 133069us/step - acc=0.731 loss=0.817 
+--Epoch 8, loss=0.8169913291931152, acc=0.7305980324745178
+Epoch 10 / 20
+batch: 28.506s
+
+28510ms 121317us/step - acc=0.755 loss=0.734 
+--Epoch 9, loss=0.7344095706939697, acc=0.7551770806312561
+Epoch 11 / 20
+batch: 30.289s
+
+30292ms 128902us/step - acc=0.786 loss=0.643 
+--Epoch 10, loss=0.6426673531532288, acc=0.7861428260803223
+Epoch 12 / 20
+batch: 28.204s
+
+28208ms 120033us/step - acc=0.792 loss=0.606 
+--Epoch 11, loss=0.606242835521698, acc=0.7921424508094788
+Epoch 13 / 20
+batch: 29.659s
+
+29662ms 126222us/step - acc=0.816 loss=0.543 
+--Epoch 12, loss=0.5430576801300049, acc=0.8159473538398743
+Epoch 14 / 20
+batch: 28.252s
+
+28255ms 120235us/step - acc=0.844 loss=0.501 
+--Epoch 13, loss=0.5013080835342407, acc=0.8436229825019836
+Epoch 15 / 20
+batch: 28.104s
+
+28107ms 119604us/step - acc=0.834 loss=0.497 
+--Epoch 14, loss=0.49747148156166077, acc=0.8335591554641724
+Epoch 16 / 20
+batch: 28.171s
+
+28174ms 119891us/step - acc=0.855 loss=0.439 
+--Epoch 15, loss=0.43861207365989685, acc=0.8548480868339539
+Epoch 17 / 20
+batch: 30.462s
+
+30465ms 129637us/step - acc=0.883 loss=0.368 
+--Epoch 16, loss=0.3680020272731781, acc=0.8825237154960632
+Epoch 18 / 20
+batch: 28.669s
+
+28672ms 122008us/step - acc=0.900 loss=0.314 
+--Epoch 17, loss=0.3136594891548157, acc=0.8999419212341309
+Epoch 19 / 20
+batch: 29.184s
+
+29187ms 124201us/step - acc=0.920 loss=0.253 
+--Epoch 18, loss=0.25332409143447876, acc=0.920069694519043
+Epoch 20 / 20
+batch: 28.179s
+
+28182ms 119923us/step - acc=0.930 loss=0.208 
+--Epoch 19, loss=0.20831283926963806, acc=0.9301335215568542
